@@ -1,0 +1,116 @@
+{% extends "layouts/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<body style="margin-top: 50px;">
+
+    <!--Main Navigation-->
+    <header>
+        <style>
+          /* Carousel styling */
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 100vh;
+          }
+  
+          .carousel-item:nth-child(1) {
+            background-image: url("{% static '02.jpeg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+  
+          /* Height for devices larger than 576px */
+          @media (min-width: 992px) {
+            #introCarousel {
+              margin-top: -58.59px;
+            }
+            #introCarousel,
+            .carousel-inner,
+            .carousel-item,
+            .carousel-item.active {
+              height: 50vh;
+            }
+          }
+  
+          .navbar .nav-link {
+            color: #fff !important;
+          }
+        </style>
+  
+  
+          <!-- Inner -->
+          <div class="carousel-inner" style="margin-top: 50px;">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); margin-top: 50px;">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <div class="text-white text-center">
+                    <h1 class="mb-3">Innovar no es solo crear algo nuevo, sino también hacerlo de manera diferente.</h1>
+                    <h5 class="mb-4" style="font-style: italic; text-align: right; margin-right: 20px;">Fernanda Gastelum</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+        <!-- Carousel wrapper -->
+      </header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">    
+      
+
+    <h4 style="margin-top: 50px; margin-bottom: 40px;">¿Por qué un emprendimiento de diseño web en Rafaela?</h4>
+
+      <p>Rafaela es una ciudad en constante crecimiento, con una economía pujante y una población joven y emprendedora. Esto la convierte en un lugar ideal para un emprendimiento de diseño web.</p><p>El diseño web es una industria en auge, y la demanda de servicios de diseño web está creciendo rápidamente. Las empresas de todos los tamaños, desde las pequeñas empresas hasta las grandes corporaciones, necesitan sitios web modernos y atractivos que les ayuden a conectar con sus clientes.</p>
+
+      <img src="{% static '12.jpeg' %}" class="img-fluid" alt="Responsive image" style="margin-left: 25px; width: 90%;">
+
+      <h4 style="margin-top: 50px; margin-bottom: 40px;">¿Qué ofrecemos?</h4>
+
+      <p>Ofrecemos una amplia gama de servicios de diseño web, incluyendo:</p>
+
+      <ul>
+        <li>Diseño de sitios web personalizados</li>
+        <li>Desarrollo de sitios web</li>
+        <li>Marketing digital</li>
+        <li>Optimización para motores de búsqueda (SEO)</li>
+      </ul>
+
+      <p>Nuestros servicios se adaptan a las necesidades específicas de cada cliente. Trabajamos con nuestros clientes para comprender sus objetivos y crear un sitio web que cumpla con sus expectativas.</p>
+
+      <img src="{% static '10.png' %}" class="img-fluid" alt="Responsive image" style="margin-left: 25px; width: 90%;">
+
+      <h4 style="margin-top: 50px; margin-bottom: 40px;">Nuestros objetivos</h4>
+
+      <p>Nuestro objetivo es ser la empresa de diseño web líder en Rafaela. Queremos ayudar a las empresas de la ciudad a crecer y tener éxito a través de la creación de sitios web que sean atractivos, funcionales y efectivos.</p>
+
+      <img src="{% static '04.jpeg' %}" class="img-fluid" alt="Responsive image" style="margin-left: 25px; width: 90%;">
+
+      <h4 style="margin-top: 50px; margin-bottom: 40px;">Nuestro equipo</h4>
+
+      <p>Nuestro equipo está formado por profesionales experimentados y cualificados con una pasión por el diseño web. Estamos comprometidos con la excelencia y nos esforzamos por ofrecer a nuestros clientes el mejor servicio posible.</p>
+
+      <img src="{% static '09.jpeg' %}" class="img-fluid" alt="Responsive image" style="margin-left: 25px; width: 90%; margin-bottom: 100px;">
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+<footer class="bg-light text-lg-start">
+  
+    <hr class="m-0" />   
+    <!-- Copyright -->
+    <p style="text-align: center;">Desarrollado por Federico R. Steinaker</p>
+    <p style="text-align: center; margin-top: -10px;">Taller Python y Django - UnRaf 2023</p>
+  </footer>
+
+{% endblock %}

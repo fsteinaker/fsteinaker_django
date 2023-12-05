@@ -1,0 +1,260 @@
+{% extends "layouts/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+      <!--Main Navigation-->
+      <header>
+        <style>
+          /* Carousel styling */
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 100vh;
+          }
+  
+          .carousel-item:nth-child(1) {
+            background-image: url("{% static 'fondo.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+  
+          /* Height for devices larger than 576px */
+          @media (min-width: 992px) {
+            #introCarousel {
+              margin-top: -58.59px;
+            }
+            #introCarousel,
+            .carousel-inner,
+            .carousel-item,
+            .carousel-item.active {
+              height: 50vh;
+            }
+          }
+  
+          .navbar .nav-link {
+            color: #fff !important;
+          }
+        </style>
+  
+  
+          <!-- Inner -->
+          <div class="carousel-inner" style="margin-top: 50px;">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); margin-top: 50px;">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <div class="text-white text-center">
+                    <h1 class="mb-3">La programación es un arte, y el arte requiere creatividad</h1>
+                    <h5 class="mb-4" style="font-style: italic; text-align: right; margin-right: 20px;">John Carmack</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+        <!-- Carousel wrapper -->
+      </header>
+      <!--Main Navigation-->
+  
+      <!--Main layout-->
+      <main class="mt-5">
+        <div class="container">
+          <!--Section: Content-->
+          <section>
+            <div class="row">
+              <div class="col-md-6 gx-5 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="{% static '01.png' %}" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
+  
+              <div class="col-md-6 gx-5 mb-4">
+                <h3><strong>Hola mundo!!!</strong></h3>
+                <p class="text-muted">
+                    Soy Federico Steinaker, un diseñador web apasionado por crear experiencias digitales que sean atractivas, funcionales y accesibles. Mi objetivo es ayudar a las empresas y organizaciones a alcanzar sus objetivos a través del diseño web.
+                </p>
+                <p><strong>La creatividad es un regalo</strong></p>
+                <p class="text-muted">
+                    Me apasiona el diseño web, y creo que las experiencias digitales pueden ser poderosas herramientas para conectar con las personas. En mi portafolio, podrás ver algunos de mis trabajos más recientes, así como aprender más sobre mi proceso de diseño.
+                </p></br>
+              </div>
+            </div>
+          </section>
+          <!--Section: Content-->
+  
+          <hr class="my-5" />
+  
+          <!--Section: Content-->
+          <section class="text-center">
+            <h4 class="mb-5"><strong>Buscá tu forma de expresarte</strong></h4>
+  
+            <!-- Card group -->
+<div class="card-group">
+
+    <!-- Card -->
+    <div class="card mb-4">
+  
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="{% static '07.jpeg' %}"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <!-- Card content -->
+      <div class="card-body">
+  
+        <!-- Title -->
+        <h4 class="card-title">Tipografías que sorprenden, seducen y emocionan.</h4>
+        <!-- Text -->
+        <p class="card-text">Trabajos de tipografías que se caracterizan por su originalidad, su belleza y su funcionalidad. En ellos, se refleja tu capacidad de ver el mundo de una manera nueva, de encontrar nuevas perspectivas y soluciones.</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="https://fonts.google.com/" target="_blank"><button type="button" style="padding: 10px;" class="btn btn-outline-primary">Ver más...</button></a>
+  
+      </div>
+      <!-- Card content -->
+  
+    </div>
+    <!-- Card -->
+  
+    <!-- Card -->
+    <div class="card mb-4">
+  
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="{% static '06.jpeg' %}"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <!-- Card content -->
+      <div class="card-body">
+        <!-- Title -->
+        <h4 class="card-title">Mis animaciones están diseñadas para atraer la atención y mantener a los visitantes interesados.</h4>
+        <!-- Text -->
+        <p class="card-text">¿Quieres que tu sitio web destaque entre la multitud? Añade animaciones atractivas que cautiven la atención de los visitantes.</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="https://animejs.com/" target="_blank"><button type="button" style="padding: 10px;" class="btn btn-outline-primary">Ver más...</button></a>
+  
+      </div>
+      <!-- Card content -->
+  
+    </div>
+    <!-- Card -->
+  
+    <!-- Card -->
+    <div class="card mb-4">
+  
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="{% static '05.png' %}"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <!-- Card content -->
+      <div class="card-body">
+  
+        <!-- Title -->
+        <h4 class="card-title">Cómo hacer que tu sitio web sea más atractivo y fácil de usar</h4>
+        <!-- Text -->
+        <p class="card-text">Haz que tu sitio web sea más atractivo y fácil de usar con nuestros servicios de diseño y desarrollo web. Aumenta el tráfico y las conversiones de tu sitio web con nuestras estrategias de marketing digital.</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="https://mailchimp.com/es/resources/5-ways-to-increase-website-traffic/" target="_blank"><button type="button" class="btn btn-outline-primary" style="padding: 10px;">Ver más...</button></a>
+  
+      </div>
+      <!-- Card content -->
+  
+    </div>
+    <!-- Card -->
+  
+  </div>
+  <!-- Card group -->
+
+          <hr class="my-5" />
+  
+          <!--Section: Content-->
+          <section class="mb-5">
+            <h4 class="mb-5 text-center"><strong>Contactanos</strong></h4>
+  
+            <div class="row d-flex justify-content-center">
+                <form style="width: 26rem;" method='POST' action='/php/enviar.php'>
+                    <!-- Name input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="form4Example1" class="form-control" id="nombre"/>
+                      <label class="form-label" for="form4Example1">Dejanos tu nombre</label>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="form4Example2" class="form-control" id="email"/>
+                      <label class="form-label" for="form4Example2">Dejanos tu mail</label>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <textarea class="form-control" id="form4Example3" rows="4" id="mensaje"></textarea>
+                      <label class="form-label" for="form4Example3">Escribí tu mensaje</label>
+                    </div>
+                  
+                   
+                    <!-- Submit button -->
+                    <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4" style="padding: 10px;">Enviar...</button>
+                  </form>
+            </div>
+          </section>
+          <!--Section: Content-->
+        </div>
+      </main>
+      <!--Main layout-->
+  
+      <!--Footer-->
+      <footer class="bg-light text-lg-start">
+  
+        <hr class="m-0" />
+  
+        <div class="text-center py-4 align-items-center">
+          <p>SEGUIME EN MIS REDES SOCIALES</p>
+          <a href="https://www.facebook.com/fedes76/" target="_blank"><button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </button></a>
+      
+          <a href="https://github.com/fsteinaker" target="_blank"><button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </button></a>
+      
+          <a href="https://ar.linkedin.com/in/federico-steinaker-11605a57" target="_blank"><button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+            </svg>
+          </button></a>
+      
+          <a href="https://www.instagram.com/fedes_76/" target="_blank"><button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+          </button></a>
+        </div>
+        <!-- Copyright -->
+        <p style="text-align: center; margin-top: -5px;">Desarrollado por Federico R. Steinaker</p>
+        <p style="text-align: center; margin-top: -10px;">Taller Python y Django - UnRaf 2023</p>
+      </footer>
+      <!--Footer-->
+
+{% endblock %}

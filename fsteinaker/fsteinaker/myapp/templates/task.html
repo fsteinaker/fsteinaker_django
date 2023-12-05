@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div style="margin-top: 75px; margin-left: 25px;">
+<h1>Tareas</h1>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2"> 
+
+        {% for task in tasks %}
+
+        <div class="card">
+            <div class="card-header">
+                <h5 style="font-style: italic; margin-top: 10px;">Detalle {{task.id}}</h5><h1 style="font-weight: bolder;">{{task.title}}</h1>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <h5 style="font-style: italic;">Descripción:</h5><p>{{task.description}}</p>
+                <h5 style="font-style: italic;">Proyecto:</h5><p>{{task.project}}</p>
+                <h1 style="text-align: right;">{% if task.done == False %} ⏱ {% else %} &#x2705 {% endif %}</h1>
+              </blockquote>
+            </div>
+          </div></br>      
+        
+        {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-lg-start">
+  
+    <hr class="m-0" />   
+    <!-- Copyright -->
+    <p style="text-align: center;">Desarrollado por Federico R. Steinaker</p>
+    <p style="text-align: center; margin-top: -10px;">Taller Python y Django - UnRaf 2023</p>
+  </footer>
+
+{% endblock %}
